@@ -40,7 +40,7 @@ body {
 .content {
     display: flex;
     margin: 1rem auto;
-    flex-direction: column;
+    width: 1440px;
 }
 
 .header {
@@ -52,6 +52,7 @@ body {
 .header .top {
     font-size: 2rem;
     font-weight: 400;
+    color: var(--Grey400);
 }
 
 .header .top2 {
@@ -61,15 +62,28 @@ body {
 
 .header .top3 {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
+    color: var(--Grey400);
 }
 
 .container {
     display: flex;
     width: 100%;
+    padding: 3rem;
     align-items: center;
     margin: 1rem auto;
 
+}
+
+.container span {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.container p {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--Grey400);
 }
 
 .container img {
@@ -130,8 +144,14 @@ body {
 
 @media screen and (max-width: 768px) {
     .header {
-        width: 90%;
+        width: 375px;
         margin: 2rem auto;
+    }
+
+    .content {
+        width: 375px;
+        margin-left: -2.55rem;
+        
     }
 
     .header .top,
@@ -157,11 +177,13 @@ body {
     .teambuilder,
     .karma,
     .calculator {
-        width: 90%;
-        margin: 1rem auto;
+        width: 375px;
+        margin: auto;
+        box-shadow: none;
     }
 
     .center {
-        width: 100%;
+        width: 375px;
+        margin: 0 auto;
     }
 }

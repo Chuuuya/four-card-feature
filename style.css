@@ -40,7 +40,7 @@ body {
 .content {
     display: flex;
     margin: 1rem auto;
-    width: 1440px;
+    flex-direction: column;
 }
 
 .header {
@@ -68,11 +68,8 @@ body {
 
 .container {
     display: flex;
-    width: 100%;
-    padding: 3rem;
     align-items: center;
-    margin: 1rem auto;
-
+    margin: 0 auto;
 }
 
 .container span {
@@ -92,7 +89,6 @@ body {
 }
 
 .center {
-    flex-direction: column;
     width: 25rem;
     margin: 0 auto;
 }
@@ -143,47 +139,39 @@ body {
 
 
 @media screen and (max-width: 768px) {
-    .header {
-        width: 375px;
-        margin: 2rem auto;
-    }
+  .header {
+    width: 90%;
+    margin: 2rem auto;
+  }
 
-    .content {
-        width: 375px;
-        margin-left: -2.55rem;
-        
-    }
+  .header .top,
+  .header .top2 {
+    font-size: 1.5rem;
+  }
 
-    .header .top,
-    .header .top2 {
-        font-size: 1.5rem;
-    }
+  .header .top3 {
+    font-size: 0.95rem;
+  }
 
-    .header .top3 {
-        font-size: 0.95rem;
-    }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .container img {
+    margin-left: 14rem;
+    padding: 1rem 0 0 0;
+  }
 
-    .container img {
-        margin-left: 13rem;
-        padding: 1rem 0 0 0;
-    }
+  .supervisor,
+  .teambuilder,
+  .karma,
+  .calculator {
+    width: 90%;
+    margin: 1rem auto;
+  }
 
-    .supervisor,
-    .teambuilder,
-    .karma,
-    .calculator {
-        width: 375px;
-        margin: auto;
-        box-shadow: none;
-    }
-
-    .center {
-        width: 375px;
-        margin: 0 auto;
-    }
+  .center {
+    width: 100%;
+  }
 }

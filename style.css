@@ -78,7 +78,7 @@ body {
 }
 
 .container p {
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--Grey400);
 }

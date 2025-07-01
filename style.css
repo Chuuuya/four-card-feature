@@ -45,6 +45,7 @@ body {
 
 .header {
     width: 35rem;
+    flex-direction: column;
     margin: 1rem auto;
     text-align: center;
 }
@@ -53,11 +54,13 @@ body {
     font-size: 2rem;
     font-weight: 400;
     color: var(--Grey400);
+    margin: 0;
 }
 
 .header .top2 {
     font-size: 2rem;
     font-weight: 600;
+    margin: 0;
 }
 
 .header .top3 {
@@ -83,9 +86,25 @@ body {
     color: var(--Grey400);
 }
 
-.container img {
-    margin-left: 15rem;
-    padding: 1rem;
+.supervisor,
+.teambuilder,
+.karma,
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 17rem;
+}
+
+.supervisor img,
+.teambuilder img,
+.karma img,
+.calculator img {
+  align-self: flex-end;
+  margin-top: auto;
+  width: 64px;
+  height: auto;
 }
 
 .center {

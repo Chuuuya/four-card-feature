@@ -86,6 +86,12 @@ body {
     color: var(--Grey400);
 }
 
+.center {
+    width: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .supervisor,
 .teambuilder,
 .karma,
@@ -107,22 +113,10 @@ body {
   height: auto;
 }
 
-.center {
-    width: 25rem;
-    margin: 0 auto;
-}
 
-.supervisor {
-    width: 25rem;
-    padding: 2rem;
-    margin: 2rem;
-    border-top: 5px solid var(--Cyan);
-    border-radius: 8px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-}
+/* Center Content */
 
 .teambuilder {
-    margin: 2rem auto;
     padding: 2rem;
     border-radius: 8px;
     border-top: 5px solid var(--Red);
@@ -138,9 +132,20 @@ body {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Right&Left Content */
+
+.supervisor {
+    width: 25rem;
+    padding: 2rem;
+    margin: 0 2rem;
+    border-top: 5px solid var(--Cyan);
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 .calculator {
     width: 25rem;
-    margin: 2rem;
+    margin: 0 2rem;
     padding: 2rem;
     border-radius: 8px;
     border-top: 5px solid var(--Blue);
